@@ -1,3 +1,5 @@
+using Org.BouncyCastle.Asn1.Tsp;
+
 namespace Sonus;
 
 public partial class CadastroArtistas : ContentPage
@@ -6,4 +8,12 @@ public partial class CadastroArtistas : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Salvar_Clicked(object sender, EventArgs e)
+    {
+		Artista artista = new Artista();
+		artista.nome = EntryNome.Text;
+		artista.url_imagem = EntryUrl.Text;
+		artista.Insere();
+    }
 }

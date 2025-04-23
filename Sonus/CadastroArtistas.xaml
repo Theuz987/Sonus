@@ -4,9 +4,16 @@
              x:Class="Sonus.CadastroArtistas"
              Title="CadastroArtistas">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label Text="Digite o nome do artista: "/>
+        <Entry x:Name="EntryNome" />
+
+        <Label Text="Insira a url da imagem: "/>
+        <Entry x:Name="EntryUrl"/>
+
+        <Button Text="Salvar" Clicked="Salvar_Clicked"/>
+        
+
+
     </VerticalStackLayout>
 </ContentPage>

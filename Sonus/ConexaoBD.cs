@@ -9,7 +9,7 @@ namespace ConexaoBD
     class Conexao
     {
 
-        string dadosConexao = "server=localhost;user=root;database=teste_ti42;port=3306;password=";
+        string dadosConexao = "server=localhost;user=root;database=sonus;port=3306;password=";
 
         public int ExecutaComando(string query)
         {
