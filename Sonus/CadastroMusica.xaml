@@ -4,9 +4,14 @@
              x:Class="Sonus.CadastroMusica"
              Title="CadastroMusica">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Label Text="Digite o nome da música:" />
+        <Entry x:Name="EntryNome" />
+
+        <Label Text="Digite o tempo da música:" />
+        <Entry x:Name="EntryTempo" />
+
+        <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
+        
     </VerticalStackLayout>
 </ContentPage>

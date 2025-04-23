@@ -6,4 +6,15 @@ public partial class ListagemMusica : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+
+        Musica musica = new Musica();
+        Lista.ItemsSource = null;
+        Lista.ItemsSource = musica.BuscaTodos();
+
+    }
 }

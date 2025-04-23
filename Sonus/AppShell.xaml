@@ -6,19 +6,32 @@
     xmlns:local="clr-namespace:Sonus"
     Title="Sonus">
 
-    <FlyoutItem Title="Usuários">
+    <FlyoutItem Title="Artistas">
         
         <ShellContent
-            Title="Listagem"
+            Title="Listagem Artistas"
             ContentTemplate="{DataTemplate local:ListagemArtistas}"
             Route="ListagemArtistas"/>
 
         <ShellContent
-            Title="Cadastro"
+            Title="Cadastro Artistas"
             ContentTemplate="{DataTemplate local:CadastroArtistas}"
             Route="CadastroArtistas"/>
 
     </FlyoutItem>
 
+    <FlyoutItem Title="Músicas">
+
+        <ShellContent
+        Title="Listagem Músicas"
+        ContentTemplate="{DataTemplate local:ListagemMusica}"
+        Route="ListagemMusica"/>
+
+        <ShellContent
+        Title="Cadastro Músicas"
+        ContentTemplate="{DataTemplate local:CadastroMusica}"
+        Route="CadastroMusica"/>
+
+    </FlyoutItem>
 
 </Shell>
