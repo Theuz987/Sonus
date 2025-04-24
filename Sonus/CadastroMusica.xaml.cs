@@ -13,7 +13,7 @@ public partial class CadastroMusica : ContentPage
     {
         Musica m = new Musica();
         m.nome = EntryNome.Text;
-        m.tempo = DateTime.Parse(EntryTempo.Text);
+        m.tempo = EntryTempo.Text;
         m.Insere();
 
         

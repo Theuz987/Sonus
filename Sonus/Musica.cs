@@ -12,7 +12,7 @@ namespace Sonus
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public DateTime tempo { get; set; }
+        public string tempo { get; set; }
 
         Conexao conexao { get; set; }
 
@@ -24,7 +24,7 @@ namespace Sonus
         public void Insere()
         {
 
-            string query = $"INSERT INTO musica (nome, tempo) VALUES ('{nome}', {tempo.ToString().Replace(",", ".")});";
+            string query = $"INSERT INTO musica (nome, tempo) VALUES ('{nome}', '{tempo}');";
             conexao.ExecutaComando(query);
             Console.WriteLine("Musica cadastrada com sucesso!");
 
@@ -42,7 +42,7 @@ namespace Sonus
 
                 p.id = int.Parse(linha["id"].ToString());
                 p.nome = linha["nome"].ToString();
-                p.tempo = DateTime.Parse(linha["tempo"].ToString());
+                p.tempo = linha["tempo"].ToString();
 
                 lista.Add(p);
             }
