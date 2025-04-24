@@ -64,16 +64,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="CadastroAlbuns.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="CadastroArtistas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ListagemAlbuns.xaml">
+	  <MauiXaml Update="CadastroUsuarios.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ListagemArtistas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ListagemUsuarios.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

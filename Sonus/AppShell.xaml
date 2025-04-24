@@ -45,6 +45,23 @@
     Title="Cadastro Albuns"
     ContentTemplate="{DataTemplate local:CadastroAlbuns}"
     Route="CadastroAlbuns"/>
+    <FlyoutItem Title="Usuarios">
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Usuários">
+
+        <ShellContent
+    Title="Listagem Usuarios"
+    ContentTemplate="{DataTemplate local:ListagemUsuarios}"
+    Route="ListagemUsuarios"/>
+
+        <ShellContent
+    Title="Cadastro Usuarios"
+    ContentTemplate="{DataTemplate local:CadastroUsuarios}"
+    Route="CadastroUsuarios"/>
+
+
 
     </FlyoutItem>
 
