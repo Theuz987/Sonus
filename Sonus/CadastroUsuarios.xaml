@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sonus.CadastroUsuarios"
+             Title="CadastroUsuarios">
+    <VerticalStackLayout>
+
+        <Label Text="Digite o email do Usuario:" />
+        <Entry x:Name="EntryEmail" />
+
+        <Label Text="Digite o nickname do Usuario:" />
+        <Entry x:Name="EntryNickname" />
+
+        <Label Text="Digite a senha do Usuario:" />
+        <Entry x:Name="EntrySenha" />
+
+        <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

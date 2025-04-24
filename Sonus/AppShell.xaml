@@ -34,4 +34,20 @@
 
     </FlyoutItem>
 
+    <FlyoutItem Title="Usuarios">
+
+        <ShellContent
+    Title="Listagem Usuarios"
+    ContentTemplate="{DataTemplate local:ListagemUsuarios}"
+    Route="ListagemUsuarios"/>
+
+        <ShellContent
+    Title="Cadastro Usuarios"
+    ContentTemplate="{DataTemplate local:CadastroUsuarios}"
+    Route="CadastroUsuarios"/>
+
+
+
+    </FlyoutItem>
+
 </Shell>
