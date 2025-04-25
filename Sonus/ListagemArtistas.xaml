@@ -2,18 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.ListagemArtistas"
-             Title="ListagemArtistas">
-    <VerticalStackLayout>
+             Title="ListagemArtistas"
+             BackgroundColor="Purple">
 
-        <ListView x:Name="Lista">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ImageCell ImageSource="{Binding url_imagem}"
-                       Text="{Binding nome}"
-                       />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="Purple" Padding="20" Spacing="50">
+            <ListView x:Name="Lista">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
 
-    </VerticalStackLayout>
+                        <ViewCell>
+                            <ScrollView>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10">
+                                    <HorizontalStackLayout Spacing="50">
+                                        <Image Source="{Binding url_imagem}" WidthRequest="80" />
+                                        <Label Text="{Binding nome}" Margin="15" VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </Frame>
+                                    
+                            </ScrollView>
+                        </ViewCell>
+
+                        <!--<ImageCell ImageSource="{Binding url_imagem}"
+                           Text="{Binding nome}"
+                           TextColor="White"
+                           Height="100"/ CTRL+K+C = comentar no Visual Studio >-->
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

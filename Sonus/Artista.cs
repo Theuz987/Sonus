@@ -12,9 +12,7 @@ namespace Sonus
     {
         public int id {  get; set; }
         public string nome { get; set; }
-
         public string url_imagem { get; set; }
-
         Conexao conexao { get; set; }
 
         public Artista()
@@ -37,7 +35,6 @@ namespace Sonus
 
             foreach (DataRow linha in dt.Rows)
             {
-
                 Artista p = new Artista();
 
                 p.id = int.Parse(linha["id"].ToString());
@@ -45,14 +42,11 @@ namespace Sonus
                 p.url_imagem =linha["url_imagem"].ToString();
 
                 lista.Add(p);
-
             }
 
             return lista;
 
         }
-
-
 
     }
 }

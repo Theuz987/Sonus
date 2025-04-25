@@ -11,7 +11,6 @@ public partial class ListagemArtistas : ContentPage
     {
         base.OnAppearing();
 
-
         Artista artista = new Artista();
         Lista.ItemsSource = null;
         Lista.ItemsSource = artista.BuscaTodos();

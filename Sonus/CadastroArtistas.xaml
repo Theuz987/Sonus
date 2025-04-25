@@ -3,17 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.CadastroArtistas"
              Title="CadastroArtistas">
-    <VerticalStackLayout>
+    
+    <VerticalStackLayout BackgroundColor="Purple" Padding="30" Spacing="30">
 
-        <Label Text="Digite o nome do artista: "/>
-        <Entry x:Name="EntryNome" />
+        <Label Text="Digite o nome do artista: " TextColor="White"/>
+            <Border BackgroundColor="White" BindingContext="White">
+                <Entry x:Name="EntryNome"/>
+            </Border>
 
-        <Label Text="Insira a url da imagem: "/>
-        <Entry x:Name="EntryUrl"/>
+        <Label Text="Insira a url da imagem: " TextColor="White"/>
+            <Border BackgroundColor="White">
+                <Entry x:Name="EntryUrl"/>
+            </Border>
 
-        <Button Text="Salvar" Clicked="Salvar_Clicked"/>
+        <Button Text="Salvar" Clicked="Salvar_Clicked"  BackgroundColor="DarkOrchid" BorderColor="Black" BorderWidth="2" Padding="20" WidthRequest="200"/>
         
-
-
     </VerticalStackLayout>
+    
 </ContentPage>

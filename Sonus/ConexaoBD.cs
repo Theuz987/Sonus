@@ -22,7 +22,6 @@ namespace ConexaoBD
             int linhasAfetadas = comando.ExecuteNonQuery();
             conexao.Close();
             return linhasAfetadas;
-
         }
 
         public DataTable ExecutaSelect(string query)
@@ -38,7 +37,6 @@ namespace ConexaoBD
             dados.Fill(dt);
             conexao.Close();
             return dt;
-
         }
 
 

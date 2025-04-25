@@ -4,14 +4,16 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Sonus"
-    Title="Sonus">
+    Title="Sonus"
+    BackgroundColor="Purple">
 
     <FlyoutItem Title="Artistas">
         
         <ShellContent
             Title="Listagem Artistas"
             ContentTemplate="{DataTemplate local:ListagemArtistas}"
-            Route="ListagemArtistas"/>
+            Route="ListagemArtistas" 
+            />
 
         <ShellContent
             Title="Cadastro Artistas"
