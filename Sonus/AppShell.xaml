@@ -47,8 +47,7 @@
     Title="Cadastro Albuns"
     ContentTemplate="{DataTemplate local:CadastroAlbuns}"
     Route="CadastroAlbuns"/>
-    <FlyoutItem Title="Usuarios">
-
+        
     </FlyoutItem>
 
     <FlyoutItem Title="Usuários">
@@ -62,8 +61,6 @@
     Title="Cadastro Usuarios"
     ContentTemplate="{DataTemplate local:CadastroUsuarios}"
     Route="CadastroUsuarios"/>
-
-
 
     </FlyoutItem>
 
