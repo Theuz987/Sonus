@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.CadastroMusica"
              Title="CadastroMusica">
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="Purple">
 
-        <Label Text="Digite o nome da música:" />
+        <Label Text="Digite o nome da música:" TextColor="White"/>
         <Entry x:Name="EntryNome" />
 
-        <Label Text="Digite o tempo da música:" />
+        <Label Text="Digite o tempo da música:" TextColor="White"/>
         <Entry x:Name="EntryTempo" />
 
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />

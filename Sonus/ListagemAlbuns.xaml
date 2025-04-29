@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.ListagemAlbuns"
              Title="ListagemAlbuns">
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="Purple">
         <ListView x:Name="Lista">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell ImageSource="{Binding url_imagem}" 
                        Text="{Binding nome}"
-                       Detail="{Binding data_lancamento}" />
+                       Detail="{Binding data_lancamento}" TextColor="White"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

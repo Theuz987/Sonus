@@ -7,6 +7,16 @@
     Title="Sonus"
     BackgroundColor="Purple">
 
+    <FlyoutItem Title="Início">
+
+        <ShellContent
+        Title="Início"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+        />
+        
+    </FlyoutItem>
+    
     <FlyoutItem Title="Artistas">
         
         <ShellContent

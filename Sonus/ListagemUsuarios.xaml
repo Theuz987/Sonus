@@ -6,13 +6,13 @@
 
     <ScrollView>
         
-        <VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="Purple">
 
             <ListView x:Name="Lista">
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
-                        <TextCell Text="{Binding email}"  Detail="{Binding nickname}" />
+                        <TextCell Text="{Binding email}"  Detail="{Binding nickname}" TextColor="White"/>
 
                     </DataTemplate>
                 </ListView.ItemTemplate>

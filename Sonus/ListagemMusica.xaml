@@ -5,14 +5,14 @@
              Title="ListagemMusica">
 
     <ScrollView>
-        
-        <VerticalStackLayout>
+
+        <VerticalStackLayout BackgroundColor="Purple">
 
             <ListView x:Name="Lista">
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
-                        <TextCell Text="{Binding nome}" Detail="{Binding tempo}" />
+                        <TextCell Text="{Binding nome}" Detail="{Binding tempo}" TextColor="White"/>
 
                     </DataTemplate>
                 </ListView.ItemTemplate>

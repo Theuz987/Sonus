@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.CadastroUsuarios"
              Title="CadastroUsuarios">
-    <VerticalStackLayout>
+    <VerticalStackLayout BackgroundColor="Purple">
 
-        <Label Text="Digite o email do Usuario:" />
+        <Label Text="Digite o email do Usuario:" TextColor="White"/>
         <Entry x:Name="EntryEmail" />
 
-        <Label Text="Digite o nickname do Usuario:" />
+        <Label Text="Digite o nickname do Usuario:" TextColor="White"/>
         <Entry x:Name="EntryNickname" />
 
-        <Label Text="Digite a senha do Usuario:" />
+        <Label Text="Digite a senha do Usuario:" TextColor="White"/>
         <Entry x:Name="EntrySenha" />
 
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
