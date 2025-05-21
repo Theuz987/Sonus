@@ -15,7 +15,6 @@ namespace Sonus
             public string nome { get; set; }
             public string url_imagem { get; set; }
             public string descricao{ get; set; }
-            public string nome_artista { get; set; }
 
 
         Conexao conexao { get; set; }

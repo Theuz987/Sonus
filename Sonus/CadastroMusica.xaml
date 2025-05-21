@@ -14,10 +14,7 @@
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
 
         <Label Text="Selecione o álbum:" TextColor="White"/>
-        <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding Nome}"/>
-
-        <Label Text="Selecione o artista:" TextColor="White"/>
-        <Picker x:Name="PickerArtista" ItemDisplayBinding="{Binding Nome}" />
+        <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>
 
     </VerticalStackLayout>
 </ContentPage>

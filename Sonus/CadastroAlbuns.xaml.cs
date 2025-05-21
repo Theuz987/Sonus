@@ -35,19 +35,17 @@ public partial class CadastroAlbuns : ContentPage
         albuns.url_imagem = EntryUrl.Text;
         albuns.descricao = EntryDescricao.Text;
 
-        albuns.Insere();
-
-        string nome = EntryAlbum.Text;
-        string urlImagem = EntryUrl.Text;
-        string descricao = EntryDescricao.Text;
-
         if (artistaSelecionadoId == -1)
         {
             DisplayAlert("Erro", "Por favor selecione um artista.", "OK");
             return;
         }
 
-        // Aqui você pode salvar o álbum
-        Console.WriteLine($"Álbum: {nome}\nImagem: {urlImagem}\nDescrição: {descricao}\nArtista ID: {artistaSelecionadoId}");
+        Artista artistaSelecionado = (Artista)PickerArtistas.SelectedItem;
+        int idArtista= artistaSelecionado.id;
+        albuns.id_artista = idArtista;
+
+        albuns.Insere();
+        DisplayAlert("Sucesso!", "Novo album cadastrado com xuxesso :)", "OK");
     }
 }
