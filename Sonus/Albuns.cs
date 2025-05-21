@@ -18,19 +18,6 @@ namespace Sonus
             public string nome_artista { get; set; }
 
 
-        class Picker : ContentPage
-        {
-            public Picker()
-            {
-                Label header = new Label
-                {
-                    Text = "Picker",
-                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                    HorizontalOptions = LayoutOptions.Center
-                };
-            }
-        }
-
         Conexao conexao { get; set; }
 
             public Albuns()
