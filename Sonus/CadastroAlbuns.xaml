@@ -8,9 +8,16 @@
         <Entry x:Name="EntryAlbum"/>
         <Label Text="insira o url da imagem" TextColor="White"/>
         <Entry x:Name="EntryUrl" />
-        <Label Text="insira a data de lançamento" TextColor="White"/>
-        <DatePicker MinimumDate="01/01/1901"  MaximumDate="12/31/2025"  Date="06/21/2025" x:Name="EntryData" TextColor="White"/>
-        
+        <Label Text="Insira uma descrição, falando sobre o álbum" TextColor="White"/>
+        <Entry x:Name="EntryDescricao" TextColor="White"/>
+
+        <Label Text="Selecione o artista" TextColor="White"/>
+        <Picker x:Name="PickerArtistas"
+        ItemDisplayBinding="{Binding nome}" 
+        SelectedIndexChanged="PickerArtistas_SelectedIndexChanged"
+        TextColor="white"/>
+
+
         <Button Text="Salvar" Clicked='Button_Clicked'/>
     </VerticalStackLayout>
 </ContentPage>

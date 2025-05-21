@@ -12,6 +12,12 @@
         <Entry x:Name="EntryTempo" />
 
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
-        
+
+        <Label Text="Selecione o álbum:" TextColor="White"/>
+        <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding Nome}" SelectedIndexChanged="PickerAlbum_SelectedIndexChanged" />
+
+        <Label Text="Selecione o artista:" TextColor="White"/>
+        <Picker x:Name="PickerArtista" ItemDisplayBinding="{Binding Nome}" SelectedIndexChanged="PickerArtista_SelectedIndexChanged" />
+
     </VerticalStackLayout>
 </ContentPage>

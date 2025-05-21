@@ -11,6 +11,9 @@
             
             <Image 
                 Source="image.jpg"
+                HeightRequest="250"
+                Aspect="AspectFit"
+                Margin="50"
                 />
 
             <Label
@@ -18,23 +21,44 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" 
                 TextColor="White"
-                Margin="10"
-                FontAttributes="Bold"/>
+                FontAttributes="Bold"
+                TextTransform="Uppercase"/>
 
             <Label
-                Text="Conheça o nosso site !!!"
+                Text="Conheça o site e rede social das músicas !!!"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 TextColor="White"
-                Margin="30"/>
+                Margin="90"/>
+
+            <Picker x:Name="pickerArtistas"
+                Title="Selecione um artista"
+                SelectedIndexChanged="pickerArtistas_SelectedIndexChanged"
+                BackgroundColor="White"
+                TextColor="White">
+            </Picker>
+
+            <Button Text="Ver Álbuns" Clicked="OnVerAlbunsClicked"/>
+
+            <ListView x:Name="albunsListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding nome}" />
+                                <Label Text="{Binding nome_artista}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Button
-                
                 x:Name="CounterBtn"
-                Text="Acesse o site"
+                Text="Acesse o nosso site"
                 VerticalOptions="End"
-                Padding="50"
-                BackgroundColor="Black"/>
+                Padding="60"
+                BackgroundColor="White"/>
         </VerticalStackLayout>
     </ScrollView>
 

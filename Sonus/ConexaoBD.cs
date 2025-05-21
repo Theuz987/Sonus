@@ -4,7 +4,7 @@ using System.Data;
 using System.Xml.Linq;
 using MySql.Data.MySqlClient;
 
-namespace ConexaoBD
+namespace Sonus
 {
     class Conexao
     {
@@ -21,10 +21,12 @@ namespace ConexaoBD
             MySqlCommand comando = new MySqlCommand(query, conexao);
             int linhasAfetadas = comando.ExecuteNonQuery();
             conexao.Close();
+
             return linhasAfetadas;
         }
+        
 
-        public DataTable ExecutaSelect(string query)
+public DataTable ExecutaSelect(string query)
         {
             // Cria e abre conexão com o banco
             MySqlConnection conexao = new MySqlConnection(dadosConexao);
@@ -38,7 +40,6 @@ namespace ConexaoBD
             conexao.Close();
             return dt;
         }
-
 
     }
 }

@@ -13,7 +13,7 @@ public partial class ListagemAlbuns : ContentPage
 
         Albuns albuns = new Albuns();
         Lista.ItemsSource = null;
-        Lista.ItemsSource = albuns.BuscaTodos();
+        Lista.ItemsSource = albuns.BuscaTodosComArtistas();
     }
 
 }

@@ -12,7 +12,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
 
-                        <TextCell Text="{Binding nome}" Detail="{Binding tempo}" TextColor="White"/>
+                        <TextCell Text="{Binding nome}" Detail="{Binding tempo}"  TextColor="White"/>
 
                     </DataTemplate>
                 </ListView.ItemTemplate>

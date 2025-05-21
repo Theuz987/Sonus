@@ -3,15 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.ListagemAlbuns"
              Title="ListagemAlbuns">
-    <VerticalStackLayout BackgroundColor="Purple">
-        <ListView x:Name="Lista">
+    <Grid RowDefinitions="Auto, *">
+        <Label Text="Lista de Álbuns"
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Margin="0"/>
+
+        <ListView x:Name="Lista"
+                 
+                  Grid.Row="1"
+                  HasUnevenRows="True"
+                  VerticalOptions="Center"
+                  BackgroundColor="Purple">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell ImageSource="{Binding url_imagem}" 
-                       Text="{Binding nome}"
-                       Detail="{Binding data_lancamento}" TextColor="White"/>
+                    <ViewCell>
+                        <Frame BackgroundColor="Transparent"
+                               BorderColor="Black"
+                               Margin="10"
+                               HasShadow="False">
+                            <HorizontalStackLayout Spacing="20">
+                                <Image Source="{Binding url_imagem}" WidthRequest="80" HeightRequest="80" />
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding nome}"
+                                           FontAttributes="Bold"
+                                           TextColor="White" />
+                                    <Label Text="{Binding descricao}"
+                                           TextColor="White" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </VerticalStackLayout>
+    </Grid>
+
+
 </ContentPage>
+
+<!--<ImageCell ImageSource="{Binding url_imagem}" 
+Text="{Binding nome}"
+Detail="{Binding data_lancamento}" TextColor="White"/>-->

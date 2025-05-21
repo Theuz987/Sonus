@@ -16,7 +16,7 @@
 
                                 <Frame BackgroundColor="Transparent" BorderColor="Black" Margin="10">
                                     <HorizontalStackLayout Spacing="50">
-                                        <Image Source="{Binding url_imagem}" WidthRequest="80" />
+                                        <Image Source="{Binding url_imagem}" WidthRequest="80"/>
                                         <Label Text="{Binding nome}" Margin="15" VerticalOptions="Center" TextColor="White"/>
                                     </HorizontalStackLayout>
                                 </Frame>

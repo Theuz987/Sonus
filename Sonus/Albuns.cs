@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConexaoBD;
 
 namespace Sonus
 {
@@ -14,12 +13,25 @@ namespace Sonus
             public int id { get; set; }
             public int id_artista { get; set; }
             public string nome { get; set; }
-
             public string url_imagem { get; set; }
-            public string data_lancamento { get; set; }
+            public string descricao{ get; set; }
+            public string nome_artista { get; set; }
 
 
-            Conexao conexao { get; set; }
+        class Picker : ContentPage
+        {
+            public Picker()
+            {
+                Label header = new Label
+                {
+                    Text = "Picker",
+                    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                    HorizontalOptions = LayoutOptions.Center
+                };
+            }
+        }
+
+        Conexao conexao { get; set; }
 
             public Albuns()
             {
@@ -28,12 +40,14 @@ namespace Sonus
 
             public void Insere()
             {
-                string query = $"INSERT INTO albuns (nome, url_imagem, data_lancamento) VALUES ( '{nome}', '{url_imagem}', '{data_lancamento}' );";
-                conexao.ExecutaComando(query);
-                Console.WriteLine("Albuns inserido com sucesso!");
-            }
+            string query = $"INSERT INTO albuns (nome, url_imagem, descricao, id_artista) " +
+               $"VALUES ('{nome}', '{url_imagem}', '{descricao}', '{id_artista}');";
 
-            public List<Albuns> BuscaTodos()
+            conexao.ExecutaComando(query);
+            Console.WriteLine("Álbum inserido com sucesso!");
+        }
+
+            public List<Albuns> BuscaTodosComArtistas()
             {
                 DataTable dt = conexao.ExecutaSelect("SELECT * FROM albuns;");
 
@@ -48,7 +62,7 @@ namespace Sonus
                     a.id_artista = int.Parse(linha["id_artista"].ToString());
                     a.nome = linha["nome"].ToString();
                     a.url_imagem = linha["url_imagem"].ToString();
-                    a.data_lancamento = linha["data_lancamento"].ToString();
+                    a.descricao = linha["descricao"].ToString();
 
                 lista.Add(a);
 

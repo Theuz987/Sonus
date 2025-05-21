@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Globalization;
-using ConexaoBD;
 
 namespace Sonus
 {
@@ -13,7 +12,8 @@ namespace Sonus
         public string email { get; set; }
         public string senha { get; set; }
         public string nickname { get; set; }
-        public string imagem { get; set; }
+        public string url_imagem { get; set; }
+        public DateTime criado_em { get; set; }
 
 
         Conexao conexao { get; set; }
