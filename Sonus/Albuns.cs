@@ -45,11 +45,11 @@ namespace Sonus
 
                     Albuns a = new Albuns();
 
-                    a.id = int.Parse(linha["id"].ToString());
-                    a.id_artista = int.Parse(linha["id_artista"].ToString());
-                    a.nome = linha["nome"].ToString();
-                    a.url_imagem = linha["url_imagem"].ToString();
-                    a.descricao = linha["descricao"].ToString();
+                a.id = Convert.ToInt32(linha["id"]);
+                a.nome = linha["nome"].ToString();
+                a.id_artista = Convert.ToInt32(linha["id_artista"]);
+                a.url_imagem = linha["url_imagem"].ToString();
+                a.descricao = linha["descricao"].ToString();
 
                 lista.Add(a);
 

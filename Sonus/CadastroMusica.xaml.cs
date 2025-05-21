@@ -22,6 +22,27 @@ public partial class CadastroMusica : ContentPage
         // Atribui aos Pickers
         PickerAlbum.ItemsSource = listaAlbuns;
         PickerArtista.ItemsSource = listaArtista;
+
+
+        try
+        {
+            Albuns album = new Albuns();
+            Artista artista = new Artista();
+
+            listaAlbuns = albuns.BuscaTodosComArtistas();
+            listaArtista = artistas.BuscaTodos();
+
+            System.Diagnostics.Debug.WriteLine("Álbuns: " + listaAlbuns.Count);
+
+
+            PickerAlbum.ItemsSource = listaAlbuns;
+            PickerArtista.ItemsSource = listaArtista;
+            
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Erro", "Erro ao carregar dados: " + ex.Message, "OK");
+        }
     }
 
 

@@ -6,8 +6,16 @@ using MySql.Data.MySqlClient;
 
 namespace Sonus
 {
-    class Conexao
+    public class Conexao
     {
+
+        private MySqlConnection conexao;
+
+        public Conexao() 
+        {
+            string dadosConexao = "server=localhost;user=root;database=sonus;port=3306;password=";
+            conexao = new MySqlConnection(dadosConexao);
+        }
 
         string dadosConexao = "server=localhost;user=root;database=sonus;port=3306;password=";
 
@@ -34,7 +42,7 @@ public DataTable ExecutaSelect(string query)
 
             // Rodar a query dentro do banco
             MySqlCommand comando = new MySqlCommand(query, conexao);
-            MySqlDataAdapter dados = new MySqlDataAdapter(comando);
+            MySqlDataAdapter dados = new MySqlDataAdapter(query, conexao);
             DataTable dt = new DataTable();
             dados.Fill(dt);
             conexao.Close();

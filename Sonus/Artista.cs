@@ -36,9 +36,9 @@ namespace Sonus
             {
                 Artista p = new Artista();
 
-                p.id = int.Parse(linha["id"].ToString());
+                p.id = Convert.ToInt32(linha["id"]);
                 p.nome = linha["nome"].ToString();
-                p.url_imagem =linha["url_imagem"].ToString();
+                p.url_imagem = linha["url_imagem"].ToString();
 
                 lista.Add(p);
             }
