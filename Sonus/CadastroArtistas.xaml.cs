@@ -15,5 +15,7 @@ public partial class CadastroArtistas : ContentPage
 		artista.nome = EntryNome.Text;
 		artista.url_imagem = EntryUrl.Text;
 		artista.Insere();
+
+        DisplayAlert("Agora foi ! ;)", "Novu artista cadastrado com sucessxo ", "OK");
     }
 }

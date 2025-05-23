@@ -46,6 +46,6 @@ public partial class CadastroAlbuns : ContentPage
         albuns.id_artista = idArtista;
 
         albuns.Insere();
-        DisplayAlert("Sucesso!", "Novo album cadastrado com xuxesso :)", "OK");
+        DisplayAlert("Sucesso!", "Novo álbum cadastrado com xuxesso :)", "OK");
     }
 }
