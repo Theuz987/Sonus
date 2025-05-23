@@ -16,5 +16,7 @@ public partial class CadastroUsuarios : ContentPage
         usuario.senha = EntrySenha.Text;
         usuario.nickname = EntryNickname.Text;
         usuario.Insere();
+
+        DisplayAlert("Aí sim!", "Usuário cadastradu com sucessu !!!", "OK");
     }
 }

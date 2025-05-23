@@ -21,17 +21,16 @@ namespace Sonus
 
             public Albuns()
             {
-                conexao = new Conexao();
+               conexao = new Conexao();
             }
-
             public void Insere()
             {
-            string query = $"INSERT INTO albuns (nome, url_imagem, descricao, id_artista) " +
-               $"VALUES ('{nome}', '{url_imagem}', '{descricao}', '{id_artista}');";
+                string query = $"INSERT INTO albuns (nome, url_imagem, descricao, id_artista) " +
+                $"VALUES ('{nome}', '{url_imagem}', '{descricao}', '{id_artista}');";
 
-            conexao.ExecutaComando(query);
-            Console.WriteLine("Álbum inserido com sucesso!");
-        }
+                conexao.ExecutaComando(query);
+                Console.WriteLine("Álbum inserido com sucesso!");
+            }
 
             public List<Albuns> BuscaTodosComArtistas()
             {
@@ -41,17 +40,15 @@ namespace Sonus
 
                 foreach (DataRow linha in dt.Rows)
                 {
-
                     Albuns a = new Albuns();
 
-                a.id = Convert.ToInt32(linha["id"]);
-                a.nome = linha["nome"].ToString();
-                a.id_artista = Convert.ToInt32(linha["id_artista"]);
-                a.url_imagem = linha["url_imagem"].ToString();
-                a.descricao = linha["descricao"].ToString();
+                    a.id = Convert.ToInt32(linha["id"]);
+                    a.nome = linha["nome"].ToString();
+                    a.id_artista = Convert.ToInt32(linha["id_artista"]);
+                    a.url_imagem = linha["url_imagem"].ToString();
+                    a.descricao = linha["descricao"].ToString();
 
-                lista.Add(a);
-
+                    lista.Add(a);
                 }
 
                 return lista;

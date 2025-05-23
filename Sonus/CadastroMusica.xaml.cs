@@ -14,11 +14,10 @@ public partial class CadastroMusica : ContentPage
     private void CarregarPickers()
     {
 
-
         Albuns albuns = new Albuns();
         Artista artistas = new Artista();
 
-        // Carrega os dados das tabelas
+        // Carrega dados das tabelas
         List<Albuns> listaAlbuns = albuns.BuscaTodosComArtistas();
 
         // Atribui aos Pickers
@@ -31,8 +30,7 @@ public partial class CadastroMusica : ContentPage
 
             listaAlbuns = albuns.BuscaTodosComArtistas();
 
-            PickerAlbum.ItemsSource = listaAlbuns;
-            
+            PickerAlbum.ItemsSource = listaAlbuns;  
         }
         catch (Exception ex)
         {
@@ -45,8 +43,6 @@ public partial class CadastroMusica : ContentPage
     {
         Musica m = new Musica();
        
-
-
         string nomeMusica = EntryNome.Text;
         string tempoMusica = EntryTempo.Text;
 
@@ -59,7 +55,6 @@ public partial class CadastroMusica : ContentPage
 
         Albuns albumSelecionado = (Albuns)PickerAlbum.SelectedItem;
         int idAlbum = albumSelecionado.id;
-
       
         m.nome = EntryNome.Text;
         m.tempo = TimeSpan.Parse(EntryTempo.Text);
