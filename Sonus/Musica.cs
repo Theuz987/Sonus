@@ -11,7 +11,7 @@ namespace Sonus
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public TimeSpan tempo { get; set; }
+        public string tempo { get; set; }
         public int id_album { get; set; }
 
         Conexao conexao { get; set; }
@@ -42,7 +42,7 @@ namespace Sonus
 
                 p.id = int.Parse(linha["id"].ToString());
                 p.nome = linha["nome"].ToString();
-                p.tempo = TimeSpan.Parse(linha["tempo"].ToString());
+                p.tempo = linha["tempo"].ToString();
                 p.id_album = int.Parse(linha["id_album"].ToString());
 
                 lista.Add(p);

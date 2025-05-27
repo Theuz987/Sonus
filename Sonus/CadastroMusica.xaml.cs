@@ -57,7 +57,7 @@ public partial class CadastroMusica : ContentPage
         int idAlbum = albumSelecionado.id;
       
         m.nome = EntryNome.Text;
-        m.tempo = TimeSpan.Parse(EntryTempo.Text);
+        m.tempo = EntryTempo.Text;
         m.id_album = idAlbum;
         m.Insere();
 
