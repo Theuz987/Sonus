@@ -11,10 +11,11 @@
         <Label Text="Digite o tempo da música:" TextColor="White"/>
         <Entry x:Name="EntryTempo" />
 
-        <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
-
         <Label Text="Selecione o álbum:" TextColor="White"/>
         <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>
+        
+        <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
+
 
     </VerticalStackLayout>
 </ContentPage>
