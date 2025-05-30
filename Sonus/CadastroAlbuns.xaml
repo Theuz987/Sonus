@@ -25,6 +25,7 @@
         <Picker x:Name="PickerArtistas"
         ItemDisplayBinding="{Binding nome}" 
         SelectedIndexChanged="PickerArtistas_SelectedIndexChanged"
+        BackgroundColor="White"
         TextColor="white"/>
 
 
