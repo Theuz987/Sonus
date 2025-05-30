@@ -16,6 +16,9 @@
                 <Entry x:Name="EntryUrl"/>
             </Border>
 
+        <Label Text="Insira uma descrição, falando sobre o artista" TextColor="White"/>
+        <Entry x:Name="EntryDescricao" TextColor="White"/>
+
         <Button Text="Salvar" Clicked="Salvar_Clicked"  BackgroundColor="DarkOrchid" BorderColor="Black" BorderWidth="2" Padding="20" WidthRequest="200"/>
         
     </VerticalStackLayout>

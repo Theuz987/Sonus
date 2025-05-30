@@ -10,7 +10,7 @@ namespace Sonus
     {
 
         private MySqlConnection conexao;
-        string dadosConexao = "server=10.60.44.50;user=root;database=sonus;port=3306;password=senac123";
+        string dadosConexao = "server=localhost;user=root;database=sonus;port=3306;password=senac123";
 
         public Conexao() 
         {

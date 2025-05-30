@@ -11,6 +11,9 @@
         <Label Text="Digite o tempo da música:" TextColor="White"/>
         <Entry x:Name="EntryTempo" />
 
+        <Label Text="insira o url da música" TextColor="White"/>
+        <Entry x:Name="EntryUrl" />
+
         <Label Text="Selecione o álbum:" TextColor="White"/>
         <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>
         
