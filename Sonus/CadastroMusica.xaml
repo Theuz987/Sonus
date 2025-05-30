@@ -13,7 +13,7 @@
 
         <Label Text="Digite o tempo da música:" TextColor="White"/>
         <Border BackgroundColor="White">
-            <Entry x:Name="Tempo"/>
+            <Entry x:Name="EntryTempo"/>
         </Border>
 
         <Label Text="insira o url da música" TextColor="White"/>
