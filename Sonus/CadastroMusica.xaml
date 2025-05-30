@@ -5,14 +5,21 @@
              Title="CadastroMusica">
     <VerticalStackLayout BackgroundColor="Purple">
 
-        <Label Text="Digite o nome da música:" TextColor="White"/>
-        <Entry x:Name="EntryNome" />
+        <Label Text="Digite o nome da música:" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryNome"/>
+        </Border>
 
-        <Label Text="Digite o tempo da música:" TextColor="White"/>
+        <Label Text="Digite o tempo da música:" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="Tempo"/>
+        </Border>
         <Entry x:Name="EntryTempo" />
 
-        <Label Text="insira o url da música" TextColor="White"/>
-        <Entry x:Name="EntryUrl" />
+        <Label Text="insira o url da música" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryUrl"/>
+        </Border>
 
         <Label Text="Selecione o álbum:" TextColor="White"/>
         <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>

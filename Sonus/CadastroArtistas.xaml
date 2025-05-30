@@ -6,18 +6,20 @@
     
     <VerticalStackLayout BackgroundColor="Purple" Padding="30" Spacing="30">
 
-        <Label Text="Digite o nome do artista: " TextColor="White"/>
+        <Label Text="Digite o nome do artista: " TextColor="Black"/>
             <Border BackgroundColor="White" BindingContext="White">
                 <Entry x:Name="EntryNome"/>
             </Border>
 
-        <Label Text="Insira a url da imagem: " TextColor="White"/>
+        <Label Text="Insira a url da imagem: " TextColor="Black"/>
             <Border BackgroundColor="White">
                 <Entry x:Name="EntryUrl"/>
             </Border>
 
-        <Label Text="Insira uma descrição, falando sobre o artista" TextColor="White"/>
-        <Entry x:Name="EntryDescricao" TextColor="White"/>
+        <Label Text="Insira uma descrição, falando sobre o artista" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryDescricao"/>
+        </Border>
 
         <Button Text="Salvar" Clicked="Salvar_Clicked"  BackgroundColor="DarkOrchid" BorderColor="Black" BorderWidth="2" Padding="20" WidthRequest="200"/>
         

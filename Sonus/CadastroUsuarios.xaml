@@ -5,14 +5,20 @@
              Title="CadastroUsuarios">
     <VerticalStackLayout BackgroundColor="Purple">
 
-        <Label Text="Digite o email do Usuario:" TextColor="White"/>
-        <Entry x:Name="EntryEmail" />
+        <Label Text="Digite o email do Usuario:" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryEmail"/>
+        </Border>
+        
+        <Label Text="Digite o nickname do Usuario:" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryNickname"/>
+        </Border>
 
-        <Label Text="Digite o nickname do Usuario:" TextColor="White"/>
-        <Entry x:Name="EntryNickname" />
-
-        <Label Text="Digite a senha do Usuario:" TextColor="White"/>
-        <Entry x:Name="EntrySenha" />
+        <Label Text="Digite a senha do Usuario:" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntrySenha"/>
+        </Border>
 
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
 

@@ -4,12 +4,20 @@
              x:Class="Sonus.CadastroAlbuns"
              Title="CadastroAlbuns">
     <VerticalStackLayout BackgroundColor="Purple">
-        <Label Text="digite o nome do album" TextColor="White"/>
-        <Entry x:Name="EntryAlbum"/>
-        <Label Text="insira o url da imagem" TextColor="White"/>
-        <Entry x:Name="EntryUrl" />
-        <Label Text="Insira uma descrição, falando sobre o álbum" TextColor="White"/>
-        <Entry x:Name="EntryDescricao" TextColor="White"/>
+        <Label Text="digite o nome do album" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryAlbum"/>
+        </Border>
+
+        <Label Text="insira o url da imagem" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryUrl"/>
+        </Border>
+
+        <Label Text="Insira uma descrição, falando sobre o álbum" TextColor="Black"/>
+        <Border BackgroundColor="White">
+            <Entry x:Name="EntryDescricao"/>
+        </Border>
 
         <Label Text="Selecione o artista" TextColor="White"/>
         <Picker x:Name="PickerArtistas"
