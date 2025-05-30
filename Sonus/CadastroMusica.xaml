@@ -15,7 +15,6 @@
         <Border BackgroundColor="White">
             <Entry x:Name="Tempo"/>
         </Border>
-        <Entry x:Name="EntryTempo" />
 
         <Label Text="insira o url da música" TextColor="White"/>
         <Border BackgroundColor="White">
@@ -23,7 +22,7 @@
         </Border>
 
         <Label Text="Selecione o álbum:" TextColor="White"/>
-        <Picker x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>
+        <Picker BackgroundColor="White" x:Name="PickerAlbum" ItemDisplayBinding="{Binding nome}"/>
         
         <Button Text="Cadastrar" Clicked="Salvar_Clicked" />
 
