@@ -3,18 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.CadastroAlbuns"
              Title="CadastroAlbuns">
-    <VerticalStackLayout BackgroundColor="Purple">
-        <Label Text="digite o nome do album" TextColor="Black"/>
+    
+    <VerticalStackLayout BackgroundColor="Purple" Padding="30" Spacing="30">
+        
+        <Label Text="digite o nome do album" TextColor="White"/>
         <Border BackgroundColor="White">
             <Entry x:Name="EntryAlbum"/>
         </Border>
 
-        <Label Text="insira o url da imagem" TextColor="Black"/>
+        <Label Text="insira o url da imagem" TextColor="White"/>
         <Border BackgroundColor="White">
             <Entry x:Name="EntryUrl"/>
         </Border>
 
-        <Label Text="Insira uma descrição, falando sobre o álbum" TextColor="Black"/>
+        <Label Text="Insira uma descrição, falando sobre o álbum" TextColor="White"/>
         <Border BackgroundColor="White">
             <Entry x:Name="EntryDescricao"/>
         </Border>

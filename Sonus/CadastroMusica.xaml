@@ -3,20 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sonus.CadastroMusica"
              Title="CadastroMusica">
-    <VerticalStackLayout BackgroundColor="Purple">
+    
+    <VerticalStackLayout BackgroundColor="Purple" Padding="30" Spacing="30">
 
-        <Label Text="Digite o nome da música:" TextColor="Black"/>
+        <Label Text="Digite o nome da música:" TextColor="White" />
         <Border BackgroundColor="White">
             <Entry x:Name="EntryNome"/>
         </Border>
 
-        <Label Text="Digite o tempo da música:" TextColor="Black"/>
+        <Label Text="Digite o tempo da música:" TextColor="White"/>
         <Border BackgroundColor="White">
             <Entry x:Name="Tempo"/>
         </Border>
         <Entry x:Name="EntryTempo" />
 
-        <Label Text="insira o url da música" TextColor="Black"/>
+        <Label Text="insira o url da música" TextColor="White"/>
         <Border BackgroundColor="White">
             <Entry x:Name="EntryUrl"/>
         </Border>
