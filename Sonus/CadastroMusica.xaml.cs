@@ -46,7 +46,7 @@ public partial class CadastroMusica : ContentPage
         string nomeMusica = EntryNome.Text;
         string tempoMusica = EntryTempo.Text;
 
-        // Verifica se os itens foram selecionados
+        // Verifica se itens foram selecionados
         if (PickerAlbum.SelectedIndex == -1 )
         {
             DisplayAlert("Erro", "Selecione um álbum e um artista.", "OK");

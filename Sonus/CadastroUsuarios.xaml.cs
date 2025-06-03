@@ -17,6 +17,6 @@ public partial class CadastroUsuarios : ContentPage
         usuario.nickname = EntryNickname.Text;
         usuario.Insere();
 
-        DisplayAlert("Aí sim!", "Usuário cadastradu com sucessu !!!", "OK");
+        DisplayAlert("Aí sim!", "Usuário cadastradu com sucesso !!!", "OK");
     }
 }
